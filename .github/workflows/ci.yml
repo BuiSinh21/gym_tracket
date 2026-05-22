@@ -28,3 +28,6 @@ jobs:
 
       - name: Run Type Check
         run: npm run typecheck
+
+      - name: Run Build
+        run: npm run build

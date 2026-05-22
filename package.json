@@ -6,9 +6,10 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:web": "npm run dev --workspace=apps/web",
-    "dev:api": "npm run dev --workspace=apps/api",
-    "lint": "npm run lint --workspaces",
+    "dev:web": "node init && npm run dev --workspace=apps/web",
+    "dev:api": "node init && npm run dev --workspace=apps/api",
+    "build": "node init && npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
     "test": "npm run test --workspaces",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "prepare": "husky"
